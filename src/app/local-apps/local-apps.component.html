@@ -1,0 +1,8 @@
+<div class="w3-container w3-margin-top">
+  <div class="w3-row">
+    <div *ngFor='let itm of appModel' class="w3-third w3-button w3-round" (click)="redirect(itm.url)">
+      <img src='{{itm.img}}' alt='{{itm.name}}' class="w3-left w3-circle" style="width:50px">
+      <h5>{{itm.name}}</h5>
+    </div>
+  </div>
+</div>
